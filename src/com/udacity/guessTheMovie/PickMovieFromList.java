@@ -1,12 +1,11 @@
 package com.udacity.guessTheMovie;
 
 import java.util.ArrayList;
-import java.util.Random;
 
-public class PickMovieFromList {
+class PickMovieFromList {
 
     String pickMovie(ArrayList<String> listOfMoviesToPickFrom) {
-        return "test";
+        int random = (int) (Math.random() * listOfMoviesToPickFrom.size());
+        return listOfMoviesToPickFrom.get(random);
     }
-
 }
