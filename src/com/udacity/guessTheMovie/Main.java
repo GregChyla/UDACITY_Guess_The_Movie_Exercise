@@ -11,8 +11,8 @@ public class Main {
         System.out.println("Hi!");
         System.out.println("Welcome to Movie Title Guessing Game.");
         System.out.println();
-        GuessTitleLetters guessTitleLetters = new GuessTitleLetters();
-        guessTitleLetters.startGuessing(pickedMovie);
+
+        new GuessTitleLetters().startGuessing(pickedMovie);
 
     }
 

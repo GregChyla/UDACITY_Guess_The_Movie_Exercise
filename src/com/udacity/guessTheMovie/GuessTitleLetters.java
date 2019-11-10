@@ -26,7 +26,7 @@ class GuessTitleLetters {
         }
         while (triesLeft > 0) {
 
-            //starting loop
+            //starting main loop
             System.out.println("Tries left: " + triesLeft);
             System.out.print("You are guessing: ");
             printData.printTitle(goodLetters, pickedMovieArray);
@@ -37,7 +37,6 @@ class GuessTitleLetters {
             if (checkIfGuessedCorrectLetter(enteredLetter)) {
                 System.out.println("GOOD!");
                 distinctLetterInTitile.remove(enteredLetter);
-                //printData.printTitle(goodLetters, pickedMovieArray);
                 System.out.print("Good letters given so far: ");
                 printData.printArray(goodLetters);
             } else {
