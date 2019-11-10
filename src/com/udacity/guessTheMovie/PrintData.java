@@ -16,9 +16,6 @@ class PrintData {
         System.out.println();
     }
     void printArray(Set<Character> givenSet) {
-        for (Character c : givenSet) {
-                System.out.print(c);
-            }
-        System.out.println();
+        givenSet.forEach(System.out::print);
     }
 }
