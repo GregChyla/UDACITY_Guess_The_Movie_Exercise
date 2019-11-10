@@ -23,7 +23,6 @@ class LoadMovie {
             System.out.println("File not found error: " + e.getMessage());
         }
     }
-
     ArrayList<String> getMovieList() {
         return movieList;
     }

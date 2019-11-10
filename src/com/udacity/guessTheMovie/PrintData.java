@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 class PrintData {
-    void printTitle(Set<Character> givenSet, ArrayList<Character> pickedTitle) {
+    void printData(Set<Character> givenSet, ArrayList<Character> pickedTitle) {
         for (Character c : pickedTitle) {
             if (givenSet.contains(c)) {
                 System.out.print(c);
@@ -15,7 +15,8 @@ class PrintData {
         }
         System.out.println();
     }
-    void printArray(Set<Character> givenSet) {
+    void printData(Set<Character> givenSet) {
         givenSet.forEach(System.out::print);
+        System.out.println();
     }
 }
